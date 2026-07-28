@@ -14,7 +14,8 @@ public class Practice001_SeleniumLocatorsPractice {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        WebElement signinElement = driver.findElement(By.xpath("//span[normalize-space()='Hello, sign in']"));
+        WebElement signinElement =
+                driver.findElement(By.xpath("//span[normalize-space()='Hello, sign in']"));
         signinElement.click();
         driver.findElement(By.id("ap_email_login")).sendKeys("sameeridea7@gmail.com");
         driver.findElement(By.className("clear-text-field-button")).click();

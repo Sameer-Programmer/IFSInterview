@@ -1,4 +1,41 @@
 package SeleniumHandon;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+
+import java.time.Duration;
+
 public class KeyBoardActions {
+    public static void main(String[] args) {
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://testautomationpractice.blogspot.com/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+        WebElement nameElement = driver.findElement(By.cssSelector("#name"));
+        nameElement.sendKeys("Sameer");
+        Actions actions = new Actions(driver);
+        actions.keyDown(Keys.CONTROL)
+                .sendKeys("A")
+                .keyUp(Keys.CONTROL)
+                .perform();
+        actions.keyDown(Keys.CONTROL)
+                .sendKeys("C")
+                .keyUp(Keys.CONTROL)
+                .perform();
+
+        actions.keyDown(Keys.TAB).perform();
+        actions.keyDown(Keys.CONTROL)
+                .sendKeys("V")
+                .keyUp(Keys.CONTROL)
+                .perform();
+
+
+
+
+    }
 }

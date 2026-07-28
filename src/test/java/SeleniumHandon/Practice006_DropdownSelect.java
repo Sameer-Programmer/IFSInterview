@@ -27,8 +27,6 @@ public class Practice006_DropdownSelect {
         String actualTextUSA = select.getFirstSelectedOption().getText();
         Assert.assertEquals(actualTextUSA, "United States");
 
-
-
         List<WebElement> options = select.getOptions();
         for (WebElement option : options) {
             String names = option.getText();

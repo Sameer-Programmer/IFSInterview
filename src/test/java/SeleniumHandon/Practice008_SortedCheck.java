@@ -36,6 +36,7 @@ public class Practice008_SortedCheck {
         Collections.sort(list1);
 
         Assert.assertTrue(list1.equals(list2),"Both are not same");
+        System.out.println(list1);
         System.out.println("Success");
 
 

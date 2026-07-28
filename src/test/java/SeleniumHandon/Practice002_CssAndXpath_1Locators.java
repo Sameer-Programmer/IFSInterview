@@ -21,7 +21,6 @@ public class Practice002_CssAndXpath_1Locators {
         emailElement.sendKeys("Sameeridea7@gmail.com");
         driver.findElement(By.cssSelector("input[placeholder='Enter Phone']")).sendKeys("8686543168");
 
-
         //RelativeXpath
         driver.findElement(By.xpath("//textarea[@id='textarea']")).sendKeys("Banglore");
 
