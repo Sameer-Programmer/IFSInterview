@@ -9,7 +9,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import java.time.Duration;
 
-public class KeyBoardActions {
+public class Practice0020_KeyBoardActions {
     public static void main(String[] args) {
         WebDriver driver = new ChromeDriver();
         driver.get("https://testautomationpractice.blogspot.com/");
