@@ -25,6 +25,7 @@ public class Practice005_Checkboxes {
 
         for (int i = 0; i < 3; i++) {
             list.get(i).click();
+            Assert.assertTrue(list.get(i).isSelected());
         }
 
         //Radio button click and assertions
